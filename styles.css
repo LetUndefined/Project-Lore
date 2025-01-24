@@ -25,11 +25,11 @@
 }
 
 .navigation-container.scrolled .navigation-links a:hover {
-  color: rgb(152, 147, 147);
+  color: rgb(0, 0, 0);
 }
 
 .navigation-container.scrolled .navigation-icons a:hover {
-  color: rgb(152, 147, 147);
+  color: rgb(0, 0, 0);
 }
 
 .navigation-info {
@@ -56,7 +56,6 @@
 
 .navigation-info a:hover {
   color: black;
-  text-shadow: 1px 1px 1px white;
 }
 
 .navigation-icons {
@@ -244,7 +243,7 @@
 .services-images-1 p,
 .services-images-2 p,
 .services-images-3 p {
-  font-size: 1.5rem;
+  font-size: 1.25rem;
   margin-top: 2rem;
 }
 
@@ -299,6 +298,7 @@
   flex-direction: column;
   height: 93vh;
   text-align: center;
+  margin-bottom: 4rem;
 }
 
 .reviews {
@@ -358,4 +358,68 @@
   position: absolute;
   top: 80%;
   left: 50;
+}
+
+.contact-container {
+  height: 93vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background: url(/Images/contact-image.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  gap: 4rem;
+  padding: 2rem;
+}
+
+#contact-title {
+  font-size: 3rem;
+  margin-top: 2rem;
+  display: block;
+}
+.contact-info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.contact-info p {
+  max-width: 650px;
+  margin-top: 5rem;
+  font-size: 1.25rem;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(255, 255, 255);
+  max-width: 600px;
+  padding: 2rem;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.contact-form input {
+  width: 500px;
+  height: 40px;
+  padding-left: 0.5rem;
+  border-radius: 10px;
+  border: 1px solid black;
+}
+
+.contact-form textarea {
+  padding-left: 0.5rem;
+  border-radius: 10px;
+  height: 200px;
+  padding-top: 0.5rem;
+}
+
+.contact-form button {
+  padding: 1rem 2rem;
+  border-radius: 10px;
+  border: none;
+  background-color: rgba(231, 166, 255, 0.62);
 }
