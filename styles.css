@@ -4,7 +4,7 @@
   box-sizing: border-box;
   font-family: "Sour Gummy", Arial, Helvetica, sans-serif;
   font-weight: 100;
-  transition: 0.4s;
+  transition: ease-in-out 0.2s;
   scroll-behavior: smooth;
 }
 
@@ -56,7 +56,6 @@
 
 .navigation-info a:hover {
   color: black;
-  transition: 0.2s;
   text-shadow: 1px 1px 1px white;
 }
 
@@ -131,7 +130,7 @@
 }
 
 .header-btn button:hover {
-  transition: 0.4s;
+  transition: 0.2s;
 }
 
 .services-container {
