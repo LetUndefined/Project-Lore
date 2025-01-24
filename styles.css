@@ -279,20 +279,14 @@
 
 .reviews {
   display: flex;
-  margin-top: 8rem;
   justify-content: center;
   align-items: center;
   gap: 3rem;
 }
 
-.review-info {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.review-info h2 {
-  font-size: 4rem;
+.review-image img {
+  max-width: 700px;
+  height: auto;
 }
 
 .image-container {
