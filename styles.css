@@ -1,0 +1,332 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Sour Gummy", Arial, Helvetica, sans-serif;
+  font-weight: 100;
+  transition: 0.4s;
+  scroll-behavior: smooth;
+}
+
+.navigation-container {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  background-color: transparent;
+  height: 60px;
+  position: fixed;
+  width: 100%;
+  z-index: 9999;
+}
+
+.scrolled {
+  background: rgb(150, 130, 130);
+  transition: 0.5s;
+}
+
+.navigation-container.scrolled .navigation-links a:hover {
+  color: rgb(152, 147, 147);
+}
+
+.navigation-container.scrolled .navigation-icons a:hover {
+  color: rgb(152, 147, 147);
+}
+
+.navigation-info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+  color: white;
+  font-family: "Sour Gummy";
+  font-weight: 100;
+}
+
+.navigation-info ul {
+  display: flex;
+  gap: 2rem;
+  list-style: none;
+}
+
+.navigation-info a {
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+}
+
+.navigation-info a:hover {
+  color: black;
+  transition: 0.2s;
+  text-shadow: 1px 1px 1px white;
+}
+
+.navigation-icons {
+  margin-right: 8rem;
+}
+
+.header-container {
+  background-image: url(/Images/pastel-bloem.jpg);
+  width: 100%;
+  height: 100vh;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.overlay {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.4);
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+.header-container h1 {
+  color: white;
+  z-index: 2;
+  text-align: center;
+  font-family: "Sour Gummy";
+  font-weight: 150;
+  font-size: 120px;
+  text-shadow: 2px 1px 1px black;
+}
+
+.header-btn {
+  display: flex;
+}
+
+.header-btn button {
+  border-radius: 30px;
+  margin: 2rem 1rem;
+  padding: 1.5rem 2.25rem;
+  z-index: 3;
+  cursor: pointer;
+  background-color: rgba(203, 151, 203, 0.5);
+}
+
+.services {
+  color: black;
+  border: 1px solid black;
+}
+
+.services:hover {
+  color: white;
+  border: 1px solid white;
+}
+
+.contact {
+  color: block;
+  border: 1px solid black;
+  background-color: white;
+}
+
+.contact:hover {
+  color: white;
+  border: 1px solid white;
+}
+
+.header-btn button:hover {
+  transition: 0.4s;
+}
+
+.services-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 1), rgba(140, 118, 118, 0.4));
+  width: 100%;
+  height: 100vh;
+  text-align: center;
+}
+
+.services-info h2 {
+  font-size: 5rem;
+  color: black;
+  margin-bottom: 3rem;
+}
+
+.services-info p {
+  font-size: 25px;
+  margin-top: 1.5rem;
+}
+
+.services-images-1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border: 1px solid black;
+  width: 100%;
+  max-width: 400px;
+  aspect-ratio: 4 / 3;
+  background-image: url(/Images/flower-hoop-1.jpg);
+  background-size: cover;
+  text-align: center;
+  position: relative;
+  margin-top: 2rem;
+  border-radius: 20px;
+}
+
+.services-images-2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border: 1px solid black;
+  width: 100%;
+  max-width: 400px;
+  aspect-ratio: 4 / 3;
+  background-image: url(/Images/Herinneringskoffer.jpg);
+  background-size: cover;
+  text-align: center;
+  position: relative;
+  margin-top: 2rem;
+  border-radius: 20px;
+}
+
+.service-images-container {
+  display: flex;
+  flex-direction: row;
+  gap: 3rem;
+  margin-top: 2rem;
+}
+
+.overlay-image {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.35);
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  border-radius: 20px;
+}
+
+.services-images-1 h3,
+.services-images-1 p,
+.services-images-1 a,
+.services-images-2 h3,
+.services-images-2 p,
+.services-images-2 a {
+  position: relative;
+  z-index: 2;
+  color: white;
+}
+.services-images-1 h3,
+.services-images-2 h3 {
+  font-size: 2rem;
+}
+
+.services-images-1 p,
+.services-images-2 p {
+  font-size: 1.5rem;
+  margin-top: 2rem;
+}
+
+.services-images-1 a,
+.services-images-2 a {
+  display: block;
+  text-decoration: none;
+  margin-top: 2rem;
+}
+
+.info-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50vh;
+  background-color: black;
+}
+
+.about-me {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.vertical {
+  border-left: 3px solid rgb(133, 79, 79);
+  height: 100px;
+}
+
+#about-me-title {
+  font-size: 3rem;
+  color: white;
+}
+
+.vertical {
+  margin: 0 1.5rem;
+}
+
+#about-me-information {
+  max-width: 35%;
+  color: white;
+  font-size: 20px;
+}
+
+.review-container {
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  flex-direction: column;
+  height: 93vh;
+  text-align: center;
+}
+
+.reviews {
+  display: flex;
+  margin-top: 8rem;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+}
+
+.review-info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.review-info h2 {
+  font-size: 4rem;
+}
+
+.image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+.review-1,
+.review-2,
+.review-3 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid black;
+  width: 100%;
+  max-width: 400px;
+  aspect-ratio: 4 / 3;
+  border-radius: 25px;
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 1), rgba(152, 147, 147, 0.5));
+  color: black;
+  text-shadow: 1px 1px 1px white;
+}
+
+.review-1 p,
+.review-2 p,
+.review-3 p {
+  margin-bottom: 2rem;
+  max-width: 300px;
+}
+
+.image-container img {
+  max-width: 80px;
+  border-radius: 50%;
+}
