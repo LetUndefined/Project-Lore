@@ -139,7 +139,7 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  background: linear-gradient(to bottom, rgba(255, 255, 255, 1), rgba(140, 118, 118, 0.4));
+  background: linear-gradient(to bottom, rgba(140, 118, 118, 0.4), rgba(255, 255, 255, 1), rgba(140, 118, 118, 0.4));
   width: 100%;
   height: 100vh;
   text-align: center;
@@ -190,6 +190,23 @@
   border-radius: 20px;
 }
 
+.services-images-3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border: 1px solid black;
+  width: 100%;
+  max-width: 400px;
+  aspect-ratio: 4 / 3;
+  background-image: url(/Images/product-3.jpg);
+  background-size: cover;
+  text-align: center;
+  position: relative;
+  margin-top: 2rem;
+  border-radius: 20px;
+}
+
 .service-images-container {
   display: flex;
   flex-direction: row;
@@ -211,24 +228,30 @@
 .services-images-1 a,
 .services-images-2 h3,
 .services-images-2 p,
-.services-images-2 a {
+.services-images-2 a,
+.services-images-3 p,
+.services-images-3 h3,
+.services-images-3 a {
   position: relative;
   z-index: 2;
   color: white;
 }
 .services-images-1 h3,
-.services-images-2 h3 {
+.services-images-2 h3,
+.services-images-3 h3 {
   font-size: 2rem;
 }
 
 .services-images-1 p,
-.services-images-2 p {
+.services-images-2 p,
+.services-images-3 p {
   font-size: 1.5rem;
   margin-top: 2rem;
 }
 
 .services-images-1 a,
-.services-images-2 a {
+.services-images-2 a,
+.services-images-3 a {
   display: block;
   text-decoration: none;
   margin-top: 2rem;
@@ -239,7 +262,9 @@
   justify-content: center;
   align-items: center;
   height: 50vh;
-  background-color: black;
+  background: url(/Images/about-me-image.jpg);
+  background-position: center;
+  background-size: cover;
 }
 
 .about-me {
@@ -255,7 +280,7 @@
 
 #about-me-title {
   font-size: 3rem;
-  color: white;
+  color: black;
 }
 
 .vertical {
@@ -264,7 +289,7 @@
 
 #about-me-information {
   max-width: 35%;
-  color: white;
+  color: black;
   font-size: 20px;
 }
 
@@ -311,7 +336,6 @@
   border-radius: 50%;
   color: black;
   text-shadow: 1px 1px 1px white;
-  /* background: linear-gradient(to top, rgba(201, 151, 92, 0.5), rgb(254, 254, 254, 1)); */
 }
 
 .review-1 p,
