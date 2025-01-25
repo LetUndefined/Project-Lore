@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="nl">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -15,40 +15,46 @@
   </head>
   <body>
     <header>
-    <nav class="navigation-container">
-      <div class="navigation-info">
-        <ul class="navigation-links">
-          <li><a href="#about-me" id="About">About</a></li>
-          <li><a href="#services">Aanbod</a></li>
-          <li><a href="#reviews">Reviews</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-        <ul class="navigation-icons">
-          <li>
-            <a href="https://www.facebook.com/profile.php?id=61568117276436&locale=nl_BE" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-          </li>
-          <li>
-            <a href="">
-              <i class="fa fa-instagram" aria-hidden="true"></i>
-            </a>
-          </li>
-        </ul>
-      </div>
-    </nav>
+      <nav class="navigation-container">
+        <div class="navigation-info">
+          <ul class="navigation-links">
+            <li><a href="#about-me" id="About">About</a></li>
+            <li><a href="#services">Aanbod</a></li>
+            <li><a href="#reviews">Reviews</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+          <ul class="navigation-icons">
+            <li>
+              <a href="https://www.facebook.com/profile.php?id=61568117276436&locale=nl_BE" target="_blank"
+                ><i class="fa fa-facebook" aria-hidden="true"></i
+              ></a>
+            </li>
+            <li>
+              <a href="">
+                <i class="fa fa-instagram" aria-hidden="true"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
     <main>
       <section class="header-container">
         <div class="overlay"></div>
         <h1>Atelier Lore</h1>
         <div class="header-btn">
-          <button class="services">Services</button>
-          <button class="contact">Contact</button>
+          <button class="services" onclick="location.href='#services'">Services</button>
+          <button class="contact" onclick="location.href='#contact'">Contact</button>
         </div>
       </section>
       <section class="info-container" id="about-me">
-        <div class="about-me" >
+        <div class="about-me">
           <h3 id="about-me-title">About Atelier Lore</h3>
           <div class="vertical"></div>
-          <p id="about-me-information">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti obcaecati temporibus quae, dolores, ullam molestiae qui, facilis in amet expedita sint aliquid odio molestias eligendi reprehenderit ab perspiciatis tenetur beatae?</p>
+          <p id="about-me-information">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti obcaecati temporibus quae, dolores, ullam molestiae qui,
+            facilis in amet expedita sint aliquid odio molestias eligendi reprehenderit ab perspiciatis tenetur beatae?
+          </p>
         </div>
       </section>
       <section class="services-container" id="services">
@@ -76,40 +82,61 @@
             <a href="#contact">Contact ></a>
           </div>
         </div>
+        <section class="carousel">
+          <input type="radio" name="position" checked />
+          <input type="radio" name="position" />
+          <input type="radio" name="position" />
+          <input type="radio" name="position" />
+          <input type="radio" name="position" />
+          <div class="carousel-items">
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+          </div>
+        </section>
       </section>
       <section class="review-container" id="reviews">
-        </div>
         <div class="review-image">
-          <img src="/Images/Slogan.jpg" alt="">
+          <img src="/Images/Slogan.jpg" alt="" />
         </div>
         <div class="reviews">
           <div class="review-1">
-            <p>Ik ben ontzettend blij met mijn flower hoop! De combinatie van kleuren, de fijne details en de kwaliteit zijn echt geweldig. Het is een prachtige eyecatcher in mijn interieur.
-              De service was ook top – vriendelijke communicatie en een zorgvuldige verpakking.</p>
+            <p>
+              Ik ben ontzettend blij met mijn flower hoop! De combinatie van kleuren, de fijne details en de kwaliteit zijn echt geweldig.
+              Het is een prachtige eyecatcher in mijn interieur. De service was ook top – vriendelijke communicatie en een zorgvuldige
+              verpakking.
+            </p>
             <div class="image-container">
-              <img src="/Images/review-logo.png" alt="foto">
+              <img src="/Images/review-logo.png" alt="foto" />
               <h5>- Emma De Jong</h5>
-              </div>
             </div>
+          </div>
           <div class="review-3">
-            <p>De gepersonaliseerde herinneringskoffer van Atelier Lore is perfect om de eerste kostbare momenten van mijn baby te bewaren. Prachtige kwaliteit en een uniek, persoonlijk ontwerp. Een echte aanrader!</p>
+            <p>
+              De gepersonaliseerde herinneringskoffer van Atelier Lore is perfect om de eerste kostbare momenten van mijn baby te bewaren.
+              Prachtige kwaliteit en een uniek, persoonlijk ontwerp. Een echte aanrader!
+            </p>
             <div class="image-container">
-            <img src="/Images/review-logo.png" alt="foto">
-            <h5>- Sophie Vermeulen</h5>
+              <img src="/Images/review-logo.png" alt="foto" />
+              <h5>- Sophie Vermeulen</h5>
             </div>
           </div>
         </div>
       </section>
       <section class="contact-container" id="contact">
         <div class="contact-info">
-        <h2 id="contact-title">Neem contact op voor jouw bestelling of vraag!</h2>
-        <p>Heb je een vraag over mijn creaties of wil je een bestelling plaatsen? Via het contactformulier kan je eenvoudig je wensen doorgeven of meer informatie opvragen. Ik help je graag verder en kijk ernaar uit om iets moois voor je te maken!
-        </p>
+          <h2 id="contact-title">Neem contact op voor jouw bestelling of vraag!</h2>
+          <p>
+            Heb je een vraag over mijn creaties of wil je een bestelling plaatsen? Via het contactformulier kan je eenvoudig je wensen
+            doorgeven of meer informatie opvragen. Ik help je graag verder en kijk ernaar uit om iets moois voor je te maken!
+          </p>
         </div>
         <form class="contact-form">
-          <input type="text" placeholder="Naam" required>
-          <input type="email" placeholder="Email" required>
-          <input type="text" placeholder="Telefoon nummer">
+          <input type="text" placeholder="Naam" required />
+          <input type="email" placeholder="Email" required />
+          <input type="text" placeholder="Telefoon nummer" />
           <textarea name="bericht" id="bericht" placeholder="Bericht" required></textarea>
           <button>Verzend</button>
         </form>

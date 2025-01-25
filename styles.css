@@ -117,6 +117,137 @@
   border: 1px solid white;
 }
 
+.carousel {
+  height: 100vh;
+  display: grid;
+  grid-template-rows: 500px 100px;
+  grid-template-columns: 1fr 30px 30px 30px 30px 30px 1fr;
+  align-items: center;
+  justify-items: center;
+}
+
+.carousel-items {
+  grid-row: 1 / 2;
+  grid-column: 1 / 8;
+  width: 100vw;
+  height: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  transform-style: preserve-3d;
+  perspective: 600px;
+  --items: 5;
+  --middle: 3;
+  --position: 1;
+  pointer-events: none;
+  margin-top: 8rem;
+}
+
+div.item {
+  position: absolute;
+  width: 400px;
+  height: 400px;
+  background-color: coral;
+  --r: calc(var(--position) - var(--offset));
+  --abs: max(calc(var(--r) * -1), var(--r));
+  transition: all 0.25s linear;
+  transform: rotateY(calc(-10deg * var(--r))) translateX(calc(-300px * var(--r)));
+  z-index: calc((var(--position) - var(--abs)));
+  border-radius: 10px;
+}
+
+div.item:nth-of-type(1) {
+  --offset: 1;
+  background: url(/Images/item-4.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+div.item:nth-of-type(2) {
+  --offset: 2;
+  background: url(/Images/koffer.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+div.item:nth-of-type(3) {
+  --offset: 3;
+  background: url(/Images/item-3.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+div.item:nth-of-type(4) {
+  --offset: 4;
+  background: url(/Images/item-5.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+div.item:nth-of-type(5) {
+  --offset: 5;
+  background: url(/Images/product-3.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+input:nth-of-type(1) {
+  grid-column: 2 / 3;
+  grid-row: 2 / 3;
+}
+input:nth-of-type(1):checked ~ .carousel-items {
+  --position: 1;
+}
+
+input:nth-of-type(2) {
+  grid-column: 3 / 4;
+  grid-row: 2 / 3;
+}
+input:nth-of-type(2):checked ~ .carousel-items {
+  --position: 2;
+}
+
+input:nth-of-type(3) {
+  grid-column: 4 /5;
+  grid-row: 2 / 3;
+}
+input:nth-of-type(3):checked ~ .carousel-items {
+  --position: 3;
+}
+
+input:nth-of-type(4) {
+  grid-column: 5 / 6;
+  grid-row: 2 / 3;
+}
+input:nth-of-type(4):checked ~ .carousel-items {
+  --position: 4;
+}
+
+input:nth-of-type(5) {
+  grid-column: 6 / 7;
+  grid-row: 2 / 3;
+}
+input:nth-of-type(5):checked ~ .carousel-items {
+  --position: 5;
+}
+.carousel input[type="radio"] {
+  appearance: none; /* Remove default styling */
+  width: 12px;
+  height: 12px;
+  background-color: #9f9f9f;
+  border-radius: 50%;
+  margin: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.carousel input[type="radio"]:checked {
+  background-color: #555; /* Highlight the selected button */
+  transform: scale(1.2);
+}
+
 .contact {
   color: block;
   border: 1px solid black;
@@ -139,7 +270,7 @@
   flex-direction: column;
   background: linear-gradient(to bottom, rgba(140, 118, 118, 0.4), rgba(255, 255, 255, 1), rgba(140, 118, 118, 0.4));
   width: 100%;
-  height: 100vh;
+  height: 150vh;
   text-align: center;
 }
 
@@ -147,6 +278,7 @@
   font-size: 5rem;
   color: black;
   margin-bottom: 3rem;
+  margin-top: 2rem;
 }
 
 .services-info p {
@@ -197,7 +329,7 @@
   width: 100%;
   max-width: 400px;
   aspect-ratio: 4 / 3;
-  background-image: url(/Images/product-3.jpg);
+  background-image: url(/Images/product-3-1.jpg);
   background-size: cover;
   text-align: center;
   position: relative;
