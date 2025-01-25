@@ -557,30 +557,37 @@ input:nth-of-type(5):checked ~ .carousel-items {
 }
 
 .footer-container {
-  height: 100%;
   display: flex;
-  align-items: center;
   justify-content: space-evenly;
+  align-items: stretch;
+  padding: 0 0 1rem 0;
+  color: white;
+  background-color: rgb(150, 130, 130);
 }
 
-.footer-info {
-  display: flex;
-  gap: 20rem;
-  margin: 2rem 0;
+.footer-container h4 {
+  margin: 2rem 0 0.5rem 0;
+  font-weight: 400;
 }
 
-.footer-info li {
+.footer-container li {
   list-style: none;
 }
 
-.footer-info a {
+.footer-container a {
   text-decoration: none;
+  color: white;
+}
+
+.footer-container a:hover {
   color: black;
 }
 
-.right-section ul {
+.footer-social-media li {
   display: flex;
-  gap: 1rem;
 }
 
-
+.footer-social-media ul {
+  display: flex;
+  gap: 0.5rem;
+}
