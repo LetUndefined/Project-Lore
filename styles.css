@@ -493,7 +493,7 @@ input:nth-of-type(5):checked ~ .carousel-items {
 }
 
 .contact-container {
-  height: 93vh;
+  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -555,3 +555,32 @@ input:nth-of-type(5):checked ~ .carousel-items {
   border: none;
   background-color: rgba(231, 166, 255, 0.62);
 }
+
+.footer-container {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.footer-info {
+  display: flex;
+  gap: 20rem;
+  margin: 2rem 0;
+}
+
+.footer-info li {
+  list-style: none;
+}
+
+.footer-info a {
+  text-decoration: none;
+  color: black;
+}
+
+.right-section ul {
+  display: flex;
+  gap: 1rem;
+}
+
+
