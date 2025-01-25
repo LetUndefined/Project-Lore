@@ -173,7 +173,7 @@ div.item:nth-of-type(2) {
 }
 div.item:nth-of-type(3) {
   --offset: 3;
-  background: url(/Images/item-3.jpg);
+  background: url(/Images/line-art.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -337,11 +337,28 @@ input:nth-of-type(5):checked ~ .carousel-items {
   border-radius: 20px;
 }
 
+.services-images-4 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border: 1px solid black;
+  width: 100%;
+  max-width: 400px;
+  aspect-ratio: 4 / 3;
+  background-image: url(/Images/line-art-3.jpg);
+  background-size: cover;
+  text-align: center;
+  position: relative;
+  margin-top: 2rem;
+  border-radius: 20px;
+}
+
 .service-images-container {
   display: flex;
   flex-direction: row;
   gap: 3rem;
-  margin-top: 2rem;
+  margin: 2rem 1rem;
 }
 
 .overlay-image {
@@ -353,38 +370,30 @@ input:nth-of-type(5):checked ~ .carousel-items {
   border-radius: 20px;
 }
 
-.services-images-1 h3,
-.services-images-1 p,
-.services-images-1 a,
-.services-images-2 h3,
-.services-images-2 p,
-.services-images-2 a,
-.services-images-3 p,
-.services-images-3 h3,
-.services-images-3 a {
+.service-images-container h3,
+.service-images-container p,
+.service-images-container a {
   position: relative;
   z-index: 2;
   color: white;
 }
-.services-images-1 h3,
-.services-images-2 h3,
-.services-images-3 h3 {
+.service-images-container h3 {
   font-size: 2rem;
 }
 
-.services-images-1 p,
-.services-images-2 p,
-.services-images-3 p {
+.service-images-container p {
   font-size: 1.25rem;
   margin-top: 2rem;
 }
-
-.services-images-1 a,
-.services-images-2 a,
-.services-images-3 a {
+.service-images-container a {
   display: block;
   text-decoration: none;
   margin-top: 2rem;
+}
+
+.services-images-3 h3,
+.services-images-4 h3 {
+  font-size: 1.75rem;
 }
 
 .info-container {
@@ -561,7 +570,7 @@ input:nth-of-type(5):checked ~ .carousel-items {
   display: flex;
   justify-content: space-evenly;
   align-items: stretch;
-  padding: 0 0 1rem 0;
+  padding: 0 0 2rem 0;
   color: white;
   background-color: rgb(150, 130, 130);
 }
