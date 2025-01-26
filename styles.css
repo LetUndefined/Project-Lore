@@ -719,10 +719,6 @@ input:nth-of-type(5):checked ~ .carousel-items {
     width: 250px;
   }
 
-  .contact-container {
-    display: none;
-  }
-
   .review-container {
     height: 100%;
   }
@@ -732,14 +728,29 @@ input:nth-of-type(5):checked ~ .carousel-items {
     font-size: 8px;
     height: 100%;
     padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1rem;
   }
 
   .review-1 h5,
   .review-3 h5 {
     font-size: 8px;
+    display: flex;
+    align-items: center;
   }
 
   .reviews {
-    gap: 0.5rem;
+    gap: 0.25rem;
+  }
+
+  .image-container img {
+    max-width: 40px;
+    top: 85%;
+  }
+
+  #contact-title {
+    font-size: 20px;
   }
 }
