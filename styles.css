@@ -249,7 +249,7 @@ input:nth-of-type(5):checked ~ .carousel-items {
 }
 
 .contact {
-  color: block;
+  color: black;
   border: 1px solid black;
   background-color: white;
 }
@@ -452,6 +452,7 @@ input:nth-of-type(5):checked ~ .carousel-items {
 
 .review-image img {
   max-width: 700px;
+  width: 100%;
   height: auto;
 }
 
@@ -498,7 +499,6 @@ input:nth-of-type(5):checked ~ .carousel-items {
   border-radius: 50%;
   position: absolute;
   top: 80%;
-  left: 50;
 }
 
 .contact-container {
@@ -537,7 +537,8 @@ input:nth-of-type(5):checked ~ .carousel-items {
   display: flex;
   flex-direction: column;
   background-color: rgb(255, 255, 255);
-  max-width: 600px;
+  max-width: 550px;
+  width: 100%;
   padding: 2rem;
   gap: 2rem;
   border-radius: 10px;
@@ -545,7 +546,8 @@ input:nth-of-type(5):checked ~ .carousel-items {
 }
 
 .contact-form input {
-  width: 500px;
+  width: 100%;
+  max-width: 500px;
   height: 40px;
   padding-left: 0.5rem;
   border-radius: 10px;
@@ -557,6 +559,8 @@ input:nth-of-type(5):checked ~ .carousel-items {
   border-radius: 10px;
   height: 200px;
   padding-top: 0.5rem;
+  width: 100%;
+  max-width: 500px;
 }
 
 .contact-form button {
@@ -564,6 +568,8 @@ input:nth-of-type(5):checked ~ .carousel-items {
   border-radius: 10px;
   border: none;
   background-color: rgba(231, 166, 255, 0.62);
+  width: 100%;
+  max-width: 500px;
 }
 
 .footer-container {
@@ -600,4 +606,140 @@ input:nth-of-type(5):checked ~ .carousel-items {
 .footer-social-media ul {
   display: flex;
   gap: 0.5rem;
+}
+
+@media screen and (max-width: 375px) {
+  .navigation-container {
+    justify-content: center;
+    background-color: rgba(128, 128, 128, 0.6);
+    border-radius: 0px 0 5px 5px;
+  }
+
+  .header-container {
+    width: 100%;
+  }
+
+  .navigation-icons {
+    margin: 0;
+  }
+
+  .navigation-info {
+    gap: 0;
+  }
+
+  .navigation-info a {
+    font-size: 15px;
+  }
+
+  .navigation-icons li {
+    display: none;
+  }
+
+  .header-container h1 {
+    font-size: 60px;
+  }
+
+  .header-btn button {
+    border-radius: 30px;
+    margin: 2rem 1rem;
+    padding: 1rem 2rem;
+  }
+  .service-images-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 0;
+    margin: 0;
+  }
+
+  .about-me {
+    height: 100%;
+  }
+
+  #about-me-title {
+    font-size: 25px;
+    text-align: center;
+  }
+
+  #about-me-information {
+    font-size: 8px;
+    max-width: 50%;
+    margin-right: 0.5rem;
+  }
+
+  .vertical {
+    border-left: 1px solid rgb(133, 79, 79);
+    margin: 0 0.5rem 0 0.5rem;
+  }
+
+  .services-container {
+    height: 100%;
+    padding-bottom: 0rem;
+  }
+
+  .services-info h2 {
+    font-size: 40px;
+    margin-bottom: 0;
+  }
+
+  .services-info p {
+    font-size: 15px;
+    margin: 0;
+  }
+
+  .services-images-1,
+  .services-images-2,
+  .services-images-3,
+  .services-images-4 {
+    width: 100%;
+    max-width: 200px;
+    aspect-ratio: 4 / 3;
+  }
+
+  .services-images-1 p,
+  .services-images-1 h3,
+  .services-images-2 p,
+  .services-images-2 h3,
+  .services-images-3 p,
+  .services-images-3 h3,
+  .services-images-4 p,
+  .services-images-4 h3 {
+    font-size: 10px;
+  }
+
+  .carousel {
+    height: 100%;
+    display: grid;
+    grid-template-rows: 350px 100px;
+  }
+
+  div.item {
+    height: 250px;
+    width: 250px;
+  }
+
+  .contact-container {
+    display: none;
+  }
+
+  .review-container {
+    height: 100%;
+  }
+
+  .review-1 p,
+  .review-3 p {
+    font-size: 8px;
+    height: 100%;
+    padding: 0;
+  }
+
+  .review-1 h5,
+  .review-3 h5 {
+    font-size: 8px;
+  }
+
+  .reviews {
+    gap: 0.5rem;
+  }
 }
