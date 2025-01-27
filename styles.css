@@ -10,7 +10,7 @@
 
 .navigation-container {
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
   align-items: center;
   background-color: transparent;
   height: 60px;
@@ -56,10 +56,6 @@
 
 .navigation-info a:hover {
   color: black;
-}
-
-.navigation-icons {
-  margin-right: 8rem;
 }
 
 .header-container {
@@ -277,13 +273,12 @@ input:nth-of-type(5):checked ~ .carousel-items {
 .services-info h2 {
   font-size: 5rem;
   color: black;
-  margin-bottom: 3rem;
   margin-top: 2rem;
 }
 
 .services-info p {
   font-size: 25px;
-  margin-top: 1.5rem;
+  justify-content: stretch;
 }
 
 .services-images-1 {
@@ -353,6 +348,9 @@ input:nth-of-type(5):checked ~ .carousel-items {
   margin-top: 2rem;
   border-radius: 20px;
 }
+#service-h3 {
+  font-size: 30px;
+}
 
 .service-images-container {
   display: flex;
@@ -379,16 +377,21 @@ input:nth-of-type(5):checked ~ .carousel-items {
 }
 .service-images-container h3 {
   font-size: 2rem;
+  margin-bottom: 1rem;
 }
 
 .service-images-container p {
   font-size: 1.25rem;
-  margin-top: 2rem;
+  max-width: 300px;
+  margin-bottom: 1rem;
 }
 .service-images-container a {
   display: block;
   text-decoration: none;
-  margin-top: 2rem;
+  padding: 0.5rem;
+  background-color: white;
+  color: black;
+  border-radius: 25px;
 }
 
 .services-images-3 h3,
@@ -564,8 +567,7 @@ input:nth-of-type(5):checked ~ .carousel-items {
   border: 1px solid black;
 }
 
-.contact-form button {
-  padding: 1rem 2rem;
+#submit-btn {
   border-radius: 10px;
   border: none;
   background-color: rgba(231, 166, 255, 0.62);
@@ -612,7 +614,6 @@ input:nth-of-type(5):checked ~ .carousel-items {
 @media screen and (max-width: 375px) {
   .navigation-container {
     justify-content: center;
-    background-color: rgba(128, 128, 128, 0.6);
     border-radius: 0px 0 5px 5px;
   }
 
@@ -629,7 +630,8 @@ input:nth-of-type(5):checked ~ .carousel-items {
   }
 
   .navigation-info a {
-    font-size: 15px;
+    font-size: 18px;
+    font-weight: 200;
   }
 
   .navigation-icons li {
@@ -644,6 +646,7 @@ input:nth-of-type(5):checked ~ .carousel-items {
     border-radius: 30px;
     margin: 2rem 1rem;
     padding: 1rem 2rem;
+    font-size: 1rem;
   }
   .service-images-container {
     display: flex;
@@ -656,22 +659,23 @@ input:nth-of-type(5):checked ~ .carousel-items {
 
   .about-me {
     height: 100%;
-  }
-
-  #about-me-title {
-    font-size: 25px;
-    text-align: center;
-  }
-
-  #about-me-information {
-    font-size: 8px;
-    max-width: 50%;
-    margin-right: 0.5rem;
+    flex-direction: column;
   }
 
   .vertical {
-    border-left: 1px solid rgb(133, 79, 79);
-    margin: 0 0.5rem 0 0.5rem;
+    display: none;
+  }
+
+  #about-me-title {
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 0.5rem;
+  }
+
+  #about-me-information {
+    font-size: 16px;
+    max-width: 80%;
+    text-align: center;
   }
 
   .services-container {
@@ -680,12 +684,13 @@ input:nth-of-type(5):checked ~ .carousel-items {
   }
 
   .services-info h2 {
-    font-size: 40px;
+    font-size: 60px;
     margin-bottom: 0;
   }
 
   .services-info p {
-    font-size: 15px;
+    font-size: 16px;
+    padding: 0 1rem;
     margin: 0;
   }
 
@@ -694,7 +699,7 @@ input:nth-of-type(5):checked ~ .carousel-items {
   .services-images-3,
   .services-images-4 {
     width: 100%;
-    max-width: 200px;
+    max-width: 300px;
     aspect-ratio: 4 / 3;
   }
 
@@ -706,7 +711,7 @@ input:nth-of-type(5):checked ~ .carousel-items {
   .services-images-3 h3,
   .services-images-4 p,
   .services-images-4 h3 {
-    font-size: 10px;
+    font-size: 18px;
   }
 
   .carousel {
@@ -726,7 +731,7 @@ input:nth-of-type(5):checked ~ .carousel-items {
 
   .review-1 p,
   .review-3 p {
-    font-size: 8px;
+    font-size: 18px;
     height: 100%;
     padding: 0;
     display: flex;
@@ -743,12 +748,230 @@ input:nth-of-type(5):checked ~ .carousel-items {
   }
 
   .reviews {
-    gap: 0.25rem;
+    gap: 3rem;
+    flex-direction: column;
   }
 
-  .image-container img {
-    max-width: 40px;
+  #review-1 {
+    top: 40%;
+  }
+
+  #review-1-title {
+    top: -20%;
+    font-size: 12px;
+  }
+
+  #review-3 {
+    top: 92%;
+  }
+
+  #review-3-title {
     top: 85%;
+    font-size: 12px;
+  }
+  .contact-container {
+    flex-direction: column;
+    height: 100%;
+    padding: 0.75rem;
+    gap: 1rem;
+  }
+  #contact-title {
+    font-size: 25px;
+  }
+
+  .contact-info p {
+    font-size: 16px;
+    margin-top: 1rem;
+  }
+
+  .contact-form {
+    margin: 0;
+    gap: 0.5rem;
+  }
+
+  .footer-container {
+    gap: 2rem;
+  }
+
+  .footer-container h4 {
+    font-weight: 200;
+  }
+
+  .footer-container p,
+  .footer-container a {
+    font-size: 10px;
+  }
+
+  .footer-menu li {
+    margin-top: -8px;
+  }
+}
+
+@media screen and (max-width: 480px) and (min-width: 376px) {
+  .navigation-container {
+    justify-content: center;
+    border-radius: 0px 0 5px 5px;
+  }
+
+  .header-container {
+    width: 100%;
+  }
+
+  .navigation-icons {
+    margin: 0;
+  }
+
+  .navigation-info {
+    gap: 2rem;
+  }
+
+  .navigation-info a {
+    font-size: 18px;
+    font-weight: 200;
+  }
+
+  .header-container h1 {
+    font-size: 80px;
+  }
+
+  .header-btn button {
+    border-radius: 30px;
+    margin: 2rem 1rem;
+    padding: 1.5rem 2.5rem;
+    font-size: 1rem;
+  }
+  .service-images-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 0;
+    margin: 0;
+  }
+
+  .info-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+    background: url(/Images/about-me-image.jpg);
+    background-position: center;
+    background-size: 190%;
+  }
+
+  .about-me {
+    height: 100%;
+    flex-direction: column;
+  }
+
+  .vertical {
+    display: none;
+  }
+
+  #about-me-title {
+    font-size: 50px;
+    text-align: center;
+    margin-bottom: 1rem;
+    font-weight: 200;
+  }
+
+  #about-me-information {
+    font-size: 19px;
+    max-width: 80%;
+    margin-right: 0.5rem;
+    text-align: center;
+  }
+
+  .services-container {
+    height: 100%;
+    padding-bottom: 0rem;
+  }
+
+  .services-info h2 {
+    font-size: 60px;
+    margin-bottom: 0;
+  }
+
+  .services-info p {
+    font-size: 16px;
+    padding: 0 1rem;
+    margin: 0;
+  }
+
+  .services-images-1,
+  .services-images-2,
+  .services-images-3,
+  .services-images-4 {
+    width: 100%;
+    max-width: 350px;
+    aspect-ratio: 4 / 3;
+  }
+
+  .services-images-1 p,
+  .services-images-1 h3,
+  .services-images-2 p,
+  .services-images-2 h3,
+  .services-images-3 p,
+  .services-images-3 h3,
+  .services-images-4 p,
+  .services-images-4 h3 {
+    font-size: 20px;
+  }
+
+  .carousel {
+    height: 100%;
+    display: grid;
+    grid-template-rows: 350px 100px;
+  }
+
+  div.item {
+    height: 250px;
+    width: 250px;
+  }
+
+  .review-container {
+    height: 100%;
+  }
+
+  .review-1 p,
+  .review-3 p {
+    font-size: 18px;
+    height: 100%;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1rem;
+  }
+
+  .review-1 h5,
+  .review-3 h5 {
+    font-size: 8px;
+    display: flex;
+    align-items: center;
+  }
+
+  .reviews {
+    gap: 3rem;
+    flex-direction: column;
+  }
+
+  #review-1 {
+    top: 40%;
+  }
+
+  #review-1-title {
+    top: -20%;
+    font-size: 12px;
+  }
+
+  #review-3 {
+    top: 92%;
+  }
+
+  #review-3-title {
+    top: 85%;
+    font-size: 12px;
   }
 
   .contact-container {
@@ -761,6 +984,414 @@ input:nth-of-type(5):checked ~ .carousel-items {
 
   .contact-info p {
     font-size: 16px;
+    margin-top: 1rem;
+  }
+
+  .contact-form {
+    margin: 0;
+    gap: 0.5rem;
+  }
+
+  .footer-container {
+    gap: 2rem;
+  }
+
+  .footer-container h4 {
+    font-weight: 200;
+  }
+
+  .footer-container p,
+  .footer-container a {
+    font-size: 10px;
+  }
+
+  .footer-menu li {
+    margin-top: -8px;
+  }
+}
+
+@media screen and (max-width: 768px) and (min-width: 481px) {
+  .navigation-container {
+    justify-content: center;
+    border-radius: 0px 0 5px 5px;
+  }
+
+  .header-container {
+    width: 100%;
+  }
+
+  .navigation-icons {
+    margin: 0;
+  }
+
+  .navigation-info {
+    gap: 2rem;
+    margin: 1rem;
+  }
+
+  .navigation-info a {
+    font-size: 20px;
+    font-weight: 200;
+  }
+
+  .header-container h1 {
+    font-size: 80px;
+  }
+
+  .header-btn button {
+    border-radius: 30px;
+    margin: 2rem 1rem;
+    padding: 1.5rem 2.5rem;
+    font-size: 1rem;
+  }
+  .service-images-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 0;
+    margin: 0;
+  }
+
+  .info-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+    background: url(/Images/about-me-image.jpg);
+    background-position: center;
+    background-size: 100%;
+  }
+
+  .about-me {
+    height: 100%;
+    flex-direction: column;
+  }
+
+  .vertical {
+    display: none;
+  }
+
+  #about-me-title {
+    font-size: 50px;
+    text-align: center;
+    margin-bottom: 1rem;
+    font-weight: 200;
+  }
+
+  #about-me-information {
+    font-size: 19px;
+    max-width: 80%;
+    margin-right: 0.5rem;
+    text-align: center;
+  }
+
+  .services-container {
+    height: 100%;
+    padding-bottom: 0rem;
+  }
+
+  .services-info h2 {
+    font-size: 60px;
+    margin-bottom: 0;
+  }
+
+  .services-info p {
+    font-size: 16px;
+    padding: 0 1rem;
+    margin: 0;
+  }
+
+  .services-images-1,
+  .services-images-2,
+  .services-images-3,
+  .services-images-4 {
+    width: 100%;
+    max-width: 350px;
+    aspect-ratio: 4 / 3;
+  }
+
+  .services-images-1 p,
+  .services-images-1 h3,
+  .services-images-2 p,
+  .services-images-2 h3,
+  .services-images-3 p,
+  .services-images-3 h3,
+  .services-images-4 p,
+  .services-images-4 h3 {
+    font-size: 20px;
+  }
+
+  .carousel {
+    height: 100%;
+    display: grid;
+    grid-template-rows: 350px 100px;
+  }
+
+  div.item {
+    height: 250px;
+    width: 250px;
+  }
+
+  .review-container {
+    height: 100%;
+  }
+
+  .review-1 p,
+  .review-3 p {
+    font-size: 18px;
+    height: 100%;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1rem;
+  }
+
+  .review-1 h5,
+  .review-3 h5 {
+    font-size: 8px;
+    display: flex;
+    align-items: center;
+  }
+
+  .reviews {
+    gap: 3rem;
+    flex-direction: column;
+  }
+
+  #review-1 {
+    top: 40%;
+  }
+
+  #review-1-title {
+    top: -20%;
+    font-size: 12px;
+  }
+
+  #review-3 {
+    top: 92%;
+  }
+
+  #review-3-title {
+    top: 85%;
+    font-size: 12px;
+  }
+
+  .contact-container {
+    flex-direction: column;
+    height: 100%;
+  }
+  #contact-title {
+    font-size: 25px;
+  }
+
+  .contact-info p {
+    font-size: 16px;
+    margin-top: 1rem;
+  }
+
+  .contact-form {
+    margin: 0;
+    gap: 0.5rem;
+  }
+
+  .footer-container {
+    gap: 2rem;
+  }
+
+  .footer-container h4 {
+    font-weight: 200;
+  }
+
+  .footer-container p,
+  .footer-container a {
+    font-size: 10px;
+  }
+
+  .footer-menu li {
+    margin-top: -8px;
+  }
+}
+
+@media screen and (max-width: 1024px) and (min-width: 769px) {
+  .navigation-container {
+    justify-content: center;
+    border-radius: 0px 0 5px 5px;
+  }
+
+  .header-container {
+    width: 100%;
+  }
+
+  .navigation-icons {
+    margin: 0;
+  }
+
+  .navigation-info {
+    gap: 2rem;
+    margin: 1rem;
+  }
+
+  .navigation-info a {
+    font-size: 20px;
+    font-weight: 200;
+  }
+
+  .header-container h1 {
+    font-size: 80px;
+  }
+
+  .header-btn button {
+    border-radius: 30px;
+    margin: 2rem 1rem;
+    padding: 1.5rem 2.5rem;
+    font-size: 1rem;
+  }
+  .service-images-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 0;
+    margin: 0;
+  }
+
+  .info-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+    background: url(/Images/about-me-image.jpg);
+    background-position: center;
+    background-size: 100%;
+  }
+
+  .about-me {
+    height: 100%;
+    flex-direction: column;
+  }
+
+  .vertical {
+    display: none;
+  }
+
+  #about-me-title {
+    font-size: 50px;
+    text-align: center;
+    margin-bottom: 1rem;
+    font-weight: 200;
+  }
+
+  #about-me-information {
+    font-size: 19px;
+    max-width: 80%;
+    margin-right: 0.5rem;
+    text-align: center;
+  }
+
+  .services-container {
+    height: 100%;
+    padding-bottom: 0rem;
+  }
+
+  .services-info h2 {
+    font-size: 60px;
+    margin-bottom: 0;
+  }
+
+  .services-info p {
+    font-size: 16px;
+    padding: 0 1rem;
+    margin: 0;
+  }
+
+  .services-images-1,
+  .services-images-2,
+  .services-images-3,
+  .services-images-4 {
+    width: 100%;
+    max-width: 350px;
+    aspect-ratio: 4 / 3;
+  }
+
+  .services-images-1 p,
+  .services-images-1 h3,
+  .services-images-2 p,
+  .services-images-2 h3,
+  .services-images-3 p,
+  .services-images-3 h3,
+  .services-images-4 p,
+  .services-images-4 h3 {
+    font-size: 20px;
+  }
+
+  .carousel {
+    height: 100%;
+    display: grid;
+    grid-template-rows: 350px 100px;
+  }
+
+  div.item {
+    height: 250px;
+    width: 250px;
+  }
+
+  .review-container {
+    height: 100%;
+  }
+
+  .review-1 p,
+  .review-3 p {
+    font-size: 18px;
+    height: 100%;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1rem;
+  }
+
+  .review-1 h5,
+  .review-3 h5 {
+    font-size: 8px;
+    display: flex;
+    align-items: center;
+  }
+
+  .reviews {
+    gap: 3rem;
+    flex-direction: column;
+  }
+
+  #review-1 {
+    top: 40%;
+  }
+
+  #review-1-title {
+    top: -20%;
+    font-size: 12px;
+  }
+
+  #review-3 {
+    top: 92%;
+  }
+
+  #review-3-title {
+    top: 85%;
+    font-size: 12px;
+  }
+
+  .contact-container {
+    flex-direction: column;
+    height: 100%;
+  }
+  #contact-title {
+    font-size: 35px;
+  }
+
+  .contact-info p {
+    font-size: 20px;
     margin-top: 1rem;
   }
 
