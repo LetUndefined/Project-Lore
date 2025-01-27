@@ -564,8 +564,7 @@ input:nth-of-type(5):checked ~ .carousel-items {
   border: 1px solid black;
 }
 
-.contact-form button {
-  padding: 1rem 2rem;
+#submit-btn {
   border-radius: 10px;
   border: none;
   background-color: rgba(231, 166, 255, 0.62);
@@ -629,7 +628,8 @@ input:nth-of-type(5):checked ~ .carousel-items {
   }
 
   .navigation-info a {
-    font-size: 15px;
+    font-size: 16px;
+    font-weight: 200;
   }
 
   .navigation-icons li {
@@ -644,6 +644,7 @@ input:nth-of-type(5):checked ~ .carousel-items {
     border-radius: 30px;
     margin: 2rem 1rem;
     padding: 1rem 2rem;
+    font-size: 1rem;
   }
   .service-images-container {
     display: flex;
@@ -656,22 +657,23 @@ input:nth-of-type(5):checked ~ .carousel-items {
 
   .about-me {
     height: 100%;
-  }
-
-  #about-me-title {
-    font-size: 25px;
-    text-align: center;
-  }
-
-  #about-me-information {
-    font-size: 8px;
-    max-width: 50%;
-    margin-right: 0.5rem;
+    flex-direction: column;
   }
 
   .vertical {
-    border-left: 1px solid rgb(133, 79, 79);
-    margin: 0 0.5rem 0 0.5rem;
+    display: none;
+  }
+
+  #about-me-title {
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 0.5rem;
+  }
+
+  #about-me-information {
+    font-size: 16px;
+    max-width: 80%;
+    text-align: center;
   }
 
   .services-container {
@@ -680,12 +682,13 @@ input:nth-of-type(5):checked ~ .carousel-items {
   }
 
   .services-info h2 {
-    font-size: 40px;
+    font-size: 60px;
     margin-bottom: 0;
   }
 
   .services-info p {
-    font-size: 15px;
+    font-size: 16px;
+    padding: 0 1rem;
     margin: 0;
   }
 
@@ -694,7 +697,7 @@ input:nth-of-type(5):checked ~ .carousel-items {
   .services-images-3,
   .services-images-4 {
     width: 100%;
-    max-width: 200px;
+    max-width: 300px;
     aspect-ratio: 4 / 3;
   }
 
@@ -706,7 +709,7 @@ input:nth-of-type(5):checked ~ .carousel-items {
   .services-images-3 h3,
   .services-images-4 p,
   .services-images-4 h3 {
-    font-size: 10px;
+    font-size: 18px;
   }
 
   .carousel {
@@ -726,7 +729,7 @@ input:nth-of-type(5):checked ~ .carousel-items {
 
   .review-1 p,
   .review-3 p {
-    font-size: 8px;
+    font-size: 18px;
     height: 100%;
     padding: 0;
     display: flex;
@@ -743,17 +746,32 @@ input:nth-of-type(5):checked ~ .carousel-items {
   }
 
   .reviews {
-    gap: 0.25rem;
+    gap: 3rem;
+    flex-direction: column;
   }
 
-  .image-container img {
-    max-width: 40px;
+  #review-1 {
+    top: 40%;
+  }
+
+  #review-1-title {
+    top: -20%;
+    font-size: 12px;
+  }
+
+  #review-3 {
+    top: 92%;
+  }
+
+  #review-3-title {
     top: 85%;
+    font-size: 12px;
   }
-
   .contact-container {
     flex-direction: column;
     height: 100%;
+    padding: 0.75rem;
+    gap: 1rem;
   }
   #contact-title {
     font-size: 25px;
@@ -787,7 +805,7 @@ input:nth-of-type(5):checked ~ .carousel-items {
   }
 }
 
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 480px) and (min-width: 376px) {
   .navigation-container {
     justify-content: center;
     background-color: rgba(128, 128, 128, 0.6);
@@ -807,7 +825,8 @@ input:nth-of-type(5):checked ~ .carousel-items {
   }
 
   .navigation-info a {
-    font-size: 15px;
+    font-size: 20px;
+    font-weight: 200;
   }
 
   .navigation-icons li {
@@ -815,13 +834,14 @@ input:nth-of-type(5):checked ~ .carousel-items {
   }
 
   .header-container h1 {
-    font-size: 60px;
+    font-size: 80px;
   }
 
   .header-btn button {
     border-radius: 30px;
     margin: 2rem 1rem;
-    padding: 1rem 2rem;
+    padding: 1.5rem 2.5rem;
+    font-size: 1rem;
   }
   .service-images-container {
     display: flex;
@@ -834,22 +854,24 @@ input:nth-of-type(5):checked ~ .carousel-items {
 
   .about-me {
     height: 100%;
-  }
-
-  #about-me-title {
-    font-size: 25px;
-    text-align: center;
-  }
-
-  #about-me-information {
-    font-size: 8px;
-    max-width: 50%;
-    margin-right: 0.5rem;
+    flex-direction: column;
   }
 
   .vertical {
-    border-left: 1px solid rgb(133, 79, 79);
-    margin: 0 0.5rem 0 0.5rem;
+    display: none;
+  }
+
+  #about-me-title {
+    font-size: 50px;
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+
+  #about-me-information {
+    font-size: 16px;
+    max-width: 70%;
+    margin-right: 0.5rem;
+    text-align: center;
   }
 
   .services-container {
@@ -858,12 +880,13 @@ input:nth-of-type(5):checked ~ .carousel-items {
   }
 
   .services-info h2 {
-    font-size: 40px;
+    font-size: 60px;
     margin-bottom: 0;
   }
 
   .services-info p {
-    font-size: 15px;
+    font-size: 16px;
+    padding: 0 1rem;
     margin: 0;
   }
 
@@ -872,7 +895,7 @@ input:nth-of-type(5):checked ~ .carousel-items {
   .services-images-3,
   .services-images-4 {
     width: 100%;
-    max-width: 200px;
+    max-width: 350px;
     aspect-ratio: 4 / 3;
   }
 
@@ -884,7 +907,7 @@ input:nth-of-type(5):checked ~ .carousel-items {
   .services-images-3 h3,
   .services-images-4 p,
   .services-images-4 h3 {
-    font-size: 10px;
+    font-size: 20px;
   }
 
   .carousel {
@@ -904,7 +927,7 @@ input:nth-of-type(5):checked ~ .carousel-items {
 
   .review-1 p,
   .review-3 p {
-    font-size: 8px;
+    font-size: 18px;
     height: 100%;
     padding: 0;
     display: flex;
@@ -921,12 +944,26 @@ input:nth-of-type(5):checked ~ .carousel-items {
   }
 
   .reviews {
-    gap: 0.25rem;
+    gap: 3rem;
+    flex-direction: column;
   }
 
-  .image-container img {
-    max-width: 40px;
+  #review-1 {
+    top: 40%;
+  }
+
+  #review-1-title {
+    top: -20%;
+    font-size: 12px;
+  }
+
+  #review-3 {
+    top: 92%;
+  }
+
+  #review-3-title {
     top: 85%;
+    font-size: 12px;
   }
 
   .contact-container {

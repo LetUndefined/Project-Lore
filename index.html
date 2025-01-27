@@ -116,8 +116,8 @@
               verpakking.
             </p>
             <div class="image-container">
-              <img src="/Images/review-logo.png" alt="foto" />
-              <h5>- Emma De Jong</h5>
+              <img src="/Images/review-logo.png" id="review-1" alt="foto" />
+              <h5 id="review-1-title">- Emma De Jong</h5>
             </div>
           </div>
           <div class="review-3">
@@ -127,8 +127,8 @@
               Prachtige kwaliteit en een uniek, persoonlijk ontwerp. Een echte aanrader!
             </p>
             <div class="image-container">
-              <img src="/Images/review-logo.png" alt="foto" />
-              <h5>- Sophie Vermeulen</h5>
+              <img src="/Images/review-logo.png" id="review-3" alt="foto" />
+              <h5 id="review-3-title">- Sophie Vermeulen</h5>
             </div>
           </div>
         </div>
@@ -142,11 +142,11 @@
           </p>
         </div>
         <form class="contact-form">
-          <input type="text" placeholder="Naam" required />
-          <input type="email" placeholder="Email" required />
-          <input type="text" placeholder="Telefoon nummer" />
-          <textarea name="bericht" id="bericht" placeholder="Bericht" required></textarea>
-          <button>Verzend</button>
+          <input type="text" placeholder="Volledige Naam" id="name" required />
+          <input type="subject" id="subject" placeholder="Onderwerp" required />
+          <input type="text" placeholder="Telefoon nummer" id="phone" />
+          <textarea name="bericht" id="message" placeholder="Bericht" required></textarea>
+          <input type="button" onclick="sendMail()" id="submit-btn" value="Verzenden" />
         </form>
       </section>
     </main>
