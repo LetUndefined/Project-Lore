@@ -277,13 +277,12 @@ input:nth-of-type(5):checked ~ .carousel-items {
 .services-info h2 {
   font-size: 5rem;
   color: black;
-  margin-bottom: 3rem;
   margin-top: 2rem;
 }
 
 .services-info p {
   font-size: 25px;
-  margin-top: 1.5rem;
+  justify-content: stretch;
 }
 
 .services-images-1 {
@@ -353,6 +352,9 @@ input:nth-of-type(5):checked ~ .carousel-items {
   margin-top: 2rem;
   border-radius: 20px;
 }
+#service-h3 {
+  font-size: 30px;
+}
 
 .service-images-container {
   display: flex;
@@ -379,16 +381,20 @@ input:nth-of-type(5):checked ~ .carousel-items {
 }
 .service-images-container h3 {
   font-size: 2rem;
+  margin-bottom: 1rem;
 }
 
 .service-images-container p {
   font-size: 1.25rem;
-  margin-top: 2rem;
+  max-width: 300px;
+  margin-bottom: 1rem;
 }
 .service-images-container a {
   display: block;
   text-decoration: none;
-  margin-top: 2rem;
+  padding: 0.5rem;
+  background-color: black;
+  border-radius: 25px;
 }
 
 .services-images-3 h3,
@@ -611,7 +617,7 @@ input:nth-of-type(5):checked ~ .carousel-items {
 @media screen and (max-width: 375px) {
   .navigation-container {
     justify-content: center;
-    background-color: rgba(128, 128, 128, 0.6);
+    background-color: rgba(128, 128, 128, 0.8);
     border-radius: 0px 0 5px 5px;
   }
 
@@ -628,7 +634,7 @@ input:nth-of-type(5):checked ~ .carousel-items {
   }
 
   .navigation-info a {
-    font-size: 16px;
+    font-size: 18px;
     font-weight: 200;
   }
 
@@ -808,7 +814,7 @@ input:nth-of-type(5):checked ~ .carousel-items {
 @media screen and (max-width: 480px) and (min-width: 376px) {
   .navigation-container {
     justify-content: center;
-    background-color: rgba(128, 128, 128, 0.6);
+    background-color: rgba(128, 128, 128, 0.8);
     border-radius: 0px 0 5px 5px;
   }
 
@@ -852,6 +858,16 @@ input:nth-of-type(5):checked ~ .carousel-items {
     margin: 0;
   }
 
+  .info-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+    background: url(/Images/about-me-image.jpg);
+    background-position: center;
+    background-size: 190%;
+  }
+
   .about-me {
     height: 100%;
     flex-direction: column;
@@ -865,11 +881,12 @@ input:nth-of-type(5):checked ~ .carousel-items {
     font-size: 50px;
     text-align: center;
     margin-bottom: 1rem;
+    font-weight: 200;
   }
 
   #about-me-information {
-    font-size: 16px;
-    max-width: 70%;
+    font-size: 19px;
+    max-width: 80%;
     margin-right: 0.5rem;
     text-align: center;
   }
