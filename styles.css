@@ -561,6 +561,7 @@ input:nth-of-type(5):checked ~ .carousel-items {
   padding-top: 0.5rem;
   width: 100%;
   max-width: 500px;
+  border: 1px solid black;
 }
 
 .contact-form button {
@@ -750,7 +751,38 @@ input:nth-of-type(5):checked ~ .carousel-items {
     top: 85%;
   }
 
+  .contact-container {
+    flex-direction: column;
+    height: 100%;
+  }
   #contact-title {
-    font-size: 20px;
+    font-size: 25px;
+  }
+
+  .contact-info p {
+    font-size: 16px;
+    margin-top: 1rem;
+  }
+
+  .contact-form {
+    margin: 0;
+    gap: 0.5rem;
+  }
+
+  .footer-container {
+    gap: 2rem;
+  }
+
+  .footer-container h4 {
+    font-weight: 200;
+  }
+
+  .footer-container p,
+  .footer-container a {
+    font-size: 10px;
+  }
+
+  .footer-menu li {
+    margin-top: -8px;
   }
 }
