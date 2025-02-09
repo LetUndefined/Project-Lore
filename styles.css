@@ -155,35 +155,35 @@ div.item {
 
 div.item:nth-of-type(1) {
   --offset: 1;
-  background: url(/Images/item-4.jpg);
+  background: url(Images/item-4.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
 div.item:nth-of-type(2) {
   --offset: 2;
-  background: url(/Images/koffer.jpg);
+  background: url(Images/koffer.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
 div.item:nth-of-type(3) {
   --offset: 3;
-  background: url(/Images/line-art.jpg);
+  background: url(Images/line-art.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
 div.item:nth-of-type(4) {
   --offset: 4;
-  background: url(/Images/item-5.jpg);
+  background: url(Images/item-5.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
 div.item:nth-of-type(5) {
   --offset: 5;
-  background: url(/Images/product-3.jpg);
+  background: url(Images/product-3.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -307,7 +307,7 @@ input:nth-of-type(5):checked ~ .carousel-items {
   width: 100%;
   max-width: 400px;
   aspect-ratio: 4 / 3;
-  background-image: url(/Images/Herinneringskoffer.jpg);
+  background-image: url(Images/Herinneringskoffer.jpg);
   background-size: cover;
   text-align: center;
   position: relative;
@@ -324,7 +324,7 @@ input:nth-of-type(5):checked ~ .carousel-items {
   width: 100%;
   max-width: 400px;
   aspect-ratio: 4 / 3;
-  background-image: url(/Images/product-3-1.jpg);
+  background-image: url(Images/product-3-1.jpg);
   background-size: cover;
   text-align: center;
   position: relative;
@@ -341,7 +341,7 @@ input:nth-of-type(5):checked ~ .carousel-items {
   width: 100%;
   max-width: 400px;
   aspect-ratio: 4 / 3;
-  background-image: url(/Images/line-art-3.jpg);
+  background-image: url(Images/line-art-3.jpg);
   background-size: cover;
   text-align: center;
   position: relative;
@@ -419,7 +419,7 @@ input:nth-of-type(5):checked ~ .carousel-items {
   justify-content: center;
   align-items: center;
   height: 50vh;
-  background: url(/Images/about-me-image.jpg);
+  background: url(Images/about-me-image.jpg);
   background-position: center;
   background-size: cover;
 }
@@ -525,7 +525,7 @@ input:nth-of-type(5):checked ~ .carousel-items {
   justify-content: center;
   align-items: center;
   text-align: center;
-  background: url(/Images/contact-image.jpg);
+  background: url(Images/contact-image.jpg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -865,7 +865,7 @@ input:nth-of-type(5):checked ~ .carousel-items {
     justify-content: center;
     align-items: center;
     height: 50vh;
-    background: url(/Images/about-me-image.jpg);
+    background: url(Images/about-me-image.jpg);
     background-position: center;
     background-size: 190%;
   }
@@ -1065,7 +1065,7 @@ input:nth-of-type(5):checked ~ .carousel-items {
     justify-content: center;
     align-items: center;
     height: 50vh;
-    background: url(/Images/about-me-image.jpg);
+    background: url(Images/about-me-image.jpg);
     background-position: center;
     background-size: 100%;
   }
@@ -1265,7 +1265,7 @@ input:nth-of-type(5):checked ~ .carousel-items {
     justify-content: center;
     align-items: center;
     height: 50vh;
-    background: url(/Images/about-me-image.jpg);
+    background: url(Images/about-me-image.jpg);
     background-position: center;
     background-size: 100%;
   }
