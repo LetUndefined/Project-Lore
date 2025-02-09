@@ -837,7 +837,7 @@ input:nth-of-type(5):checked ~ .carousel-items {
   }
 
   .navigation-info a {
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 200;
   }
 
