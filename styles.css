@@ -558,7 +558,7 @@ input:nth-of-type(5):checked ~ .carousel-items {
   max-width: 550px;
   width: 100%;
   padding: 2rem;
-  gap: 2rem;
+  gap: 1rem;
   border-radius: 10px;
   margin-top: 2rem;
 }
@@ -582,9 +582,17 @@ input:nth-of-type(5):checked ~ .carousel-items {
   border: 1px solid black;
 }
 
+.contact-form input:valid {
+  border: 2px solid green;
+}
+
+.contact-form textarea:valid {
+  border: 2px solid green;
+}
+
 #submit-btn {
   border-radius: 10px;
-  border: none;
+  border: 1px solid black;
   background-color: rgba(231, 166, 255, 0.62);
   width: 100%;
   max-width: 500px;
