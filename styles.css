@@ -394,9 +394,6 @@ input:nth-of-type(5):checked ~ .carousel-items {
   border-radius: 20px;
   box-shadow: 1px 1px 10px black;
 }
-#service-h3 {
-  font-size: 30px;
-}
 
 .services-images-1,
 .services-images-2,
@@ -886,6 +883,10 @@ input:nth-of-type(5):checked ~ .carousel-items {
     border-radius: 0px 0 5px 5px;
   }
 
+  .navigation-info ul {
+    gap: 1rem;
+  }
+
   .header-container {
     width: 100%;
   }
@@ -942,16 +943,15 @@ input:nth-of-type(5):checked ~ .carousel-items {
   }
 
   #about-me-title {
-    font-size: 50px;
+    font-size: 46px;
     text-align: center;
     margin-bottom: 1rem;
     font-weight: 200;
   }
 
   #about-me-information {
-    font-size: 19px;
+    font-size: 14px;
     max-width: 80%;
-    margin-right: 0.5rem;
     text-align: center;
   }
 
@@ -961,7 +961,7 @@ input:nth-of-type(5):checked ~ .carousel-items {
   }
 
   .services-info h2 {
-    font-size: 60px;
+    font-size: 50px;
     margin-bottom: 0;
   }
 
@@ -978,7 +978,7 @@ input:nth-of-type(5):checked ~ .carousel-items {
   .services-images-5,
   .services-images-6 {
     width: 100%;
-    max-width: 350px;
+    max-width: 300px;
     aspect-ratio: 4 / 3;
   }
 
@@ -988,8 +988,12 @@ input:nth-of-type(5):checked ~ .carousel-items {
   .services-images-4 p,
   .services-images-5 p,
   .services-images-6 p {
-    font-size: 22px;
+    font-size: 16px;
     margin-top: 1rem;
+  }
+
+  .service-images-container h3 {
+    font-size: 1.5rem;
   }
 
   .carousel {
@@ -1009,7 +1013,7 @@ input:nth-of-type(5):checked ~ .carousel-items {
 
   .review-1 p,
   .review-3 p {
-    font-size: 18px;
+    font-size: 16px;
     height: 100%;
     padding: 0;
     display: flex;
@@ -1156,7 +1160,6 @@ input:nth-of-type(5):checked ~ .carousel-items {
   #about-me-information {
     font-size: 19px;
     max-width: 80%;
-    margin-right: 0.5rem;
     text-align: center;
   }
 
@@ -1361,7 +1364,6 @@ input:nth-of-type(5):checked ~ .carousel-items {
   #about-me-information {
     font-size: 19px;
     max-width: 80%;
-    margin-right: 0.5rem;
     text-align: center;
   }
 
@@ -1565,7 +1567,6 @@ input:nth-of-type(5):checked ~ .carousel-items {
   #about-me-information {
     font-size: 19px;
     max-width: 80%;
-    margin-right: 0.5rem;
     text-align: center;
   }
 
