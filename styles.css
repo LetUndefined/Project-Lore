@@ -172,21 +172,21 @@ div.item:nth-of-type(2) {
 }
 div.item:nth-of-type(3) {
   --offset: 3;
-  background: url(Images/line-art.jpg);
+  background: url(Images/product-3.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
 div.item:nth-of-type(4) {
   --offset: 4;
-  background: url(Images/item-5.jpg);
+  background: url(Images/line-art.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
 div.item:nth-of-type(5) {
   --offset: 5;
-  background: url(Images/product-3.jpg);
+  background: url(Images/cadeaubox-info.jpeg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -358,6 +358,42 @@ input:nth-of-type(5):checked ~ .carousel-items {
   border-radius: 20px;
   box-shadow: 1px 1px 10px black;
 }
+
+.services-images-5 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border: 1px solid black;
+  width: 100%;
+  max-width: 400px;
+  aspect-ratio: 4 / 3;
+  background-image: url(Images/cadeaubox.jpeg);
+  background-size: cover;
+  text-align: center;
+  position: relative;
+  margin-top: 2rem;
+  border-radius: 20px;
+  box-shadow: 1px 1px 10px black;
+}
+
+.services-images-6 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border: 1px solid black;
+  width: 100%;
+  max-width: 400px;
+  aspect-ratio: 4 / 3;
+  background-image: url(Images/cadeaubon.jpg);
+  background-size: cover;
+  text-align: center;
+  position: relative;
+  margin-top: 2rem;
+  border-radius: 20px;
+  box-shadow: 1px 1px 10px black;
+}
 #service-h3 {
   font-size: 30px;
 }
@@ -365,15 +401,19 @@ input:nth-of-type(5):checked ~ .carousel-items {
 .services-images-1,
 .services-images-2,
 .services-images-3,
-.services-images-4 {
+.services-images-4,
+.services-images-5,
+.services-images-6 {
   padding: 0rem 0.5rem;
 }
 
 .service-images-container {
   display: flex;
   flex-direction: row;
+  justify-content: center;
   gap: 2.5rem;
   margin: 2rem 1rem;
+  flex-wrap: wrap;
 }
 
 .overlay-image {
@@ -398,20 +438,13 @@ input:nth-of-type(5):checked ~ .carousel-items {
 }
 
 .service-images-container h3 {
-  font-weight: 300;
+  font-weight: 400;
+  border-bottom: 1px solid rgb(255, 255, 255);
 }
 
 .service-images-container p {
-  font-size: 1.25rem;
+  font-size: 1.5rem;
   flex-grow: 1;
-}
-.service-images-container a {
-  display: block;
-  text-decoration: none;
-  padding: 0.5rem;
-  background-color: white;
-  color: black;
-  border-radius: 25px;
 }
 
 .services-images-3 h3,
@@ -568,7 +601,7 @@ input:nth-of-type(5):checked ~ .carousel-items {
   gap: 1rem;
   border-radius: 10px;
   margin-top: 2rem;
-  box-shadow: 0px 0px 10px 1px black;
+  box-shadow: 0px 0px 25px black;
 }
 
 .contact-form input {
@@ -737,7 +770,9 @@ input:nth-of-type(5):checked ~ .carousel-items {
   .services-images-1,
   .services-images-2,
   .services-images-3,
-  .services-images-4 {
+  .services-images-4,
+  .services-images-5,
+  .services-images-6 {
     width: 100%;
     max-width: 300px;
     aspect-ratio: 4 / 3;
@@ -746,7 +781,9 @@ input:nth-of-type(5):checked ~ .carousel-items {
   .services-images-1 p,
   .services-images-2 p,
   .services-images-3 p,
-  .services-images-4 p {
+  .services-images-4 p,
+  .services-images-5 p,
+  .services-images-6 p {
     font-size: 18px;
   }
 
@@ -937,7 +974,9 @@ input:nth-of-type(5):checked ~ .carousel-items {
   .services-images-1,
   .services-images-2,
   .services-images-3,
-  .services-images-4 {
+  .services-images-4,
+  .services-images-5,
+  .services-images-6 {
     width: 100%;
     max-width: 350px;
     aspect-ratio: 4 / 3;
@@ -946,7 +985,9 @@ input:nth-of-type(5):checked ~ .carousel-items {
   .services-images-1 p,
   .services-images-2 p,
   .services-images-3 p,
-  .services-images-4 p {
+  .services-images-4 p,
+  .services-images-5 p,
+  .services-images-6 p {
     font-size: 22px;
     margin-top: 1rem;
   }
@@ -1138,7 +1179,9 @@ input:nth-of-type(5):checked ~ .carousel-items {
   .services-images-1,
   .services-images-2,
   .services-images-3,
-  .services-images-4 {
+  .services-images-4,
+  .services-images-5,
+  .services-images-6 {
     width: 100%;
     max-width: 350px;
     aspect-ratio: 4 / 3;
@@ -1147,7 +1190,9 @@ input:nth-of-type(5):checked ~ .carousel-items {
   .services-images-1 p,
   .services-images-2 p,
   .services-images-3 p,
-  .services-images-4 p {
+  .services-images-4 p,
+  .services-images-5 p,
+  .services-images-6 p {
     font-size: 22px;
     margin-top: 1rem;
   }
@@ -1339,7 +1384,9 @@ input:nth-of-type(5):checked ~ .carousel-items {
   .services-images-1,
   .services-images-2,
   .services-images-3,
-  .services-images-4 {
+  .services-images-4,
+  .services-images-5,
+  .services-images-6 {
     width: 100%;
     max-width: 350px;
     aspect-ratio: 4 / 3;
@@ -1348,7 +1395,9 @@ input:nth-of-type(5):checked ~ .carousel-items {
   .services-images-1 p,
   .services-images-2 p,
   .services-images-3 p,
-  .services-images-4 p {
+  .services-images-4 p,
+  .services-images-5 p,
+  .services-images-6 p {
     font-size: 20px;
   }
 
@@ -1539,7 +1588,9 @@ input:nth-of-type(5):checked ~ .carousel-items {
   .services-images-1,
   .services-images-2,
   .services-images-3,
-  .services-images-4 {
+  .services-images-4,
+  .services-images-5,
+  .services-images-6 {
     width: 100%;
     max-width: 350px;
     aspect-ratio: 4 / 3;
@@ -1548,7 +1599,9 @@ input:nth-of-type(5):checked ~ .carousel-items {
   .services-images-1 p,
   .services-images-2 p,
   .services-images-3 p,
-  .services-images-4 p {
+  .services-images-4 p,
+  .services-images-5 p,
+  .services-images-6 p {
     font-size: 20px;
   }
 
