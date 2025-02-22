@@ -20,8 +20,9 @@
 }
 
 .scrolled {
-  background: rgb(150, 130, 130);
+  background: rgb(207, 159, 178);
   transition: 0.2s;
+  box-shadow: -1px -1px 20px black;
 }
 
 .navigation-container.scrolled .navigation-links a:hover {
@@ -52,6 +53,7 @@
   text-decoration: none;
   color: white;
   font-size: 20px;
+  font-weight: 200;
 }
 
 .navigation-info a:hover {
@@ -100,7 +102,7 @@
   padding: 1.5rem 2.25rem;
   z-index: 3;
   cursor: pointer;
-  background-color: rgba(203, 151, 203, 0.5);
+  background-color: rgb(207, 159, 178);
 }
 
 .services {
@@ -265,7 +267,7 @@ input:nth-of-type(5):checked ~ .carousel-items {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  background: linear-gradient(to bottom, rgba(140, 118, 118, 0.4), rgba(255, 255, 255, 1), rgba(140, 118, 118, 0.4));
+  background: linear-gradient(to bottom, rgb(207, 159, 178, 0.4), rgba(255, 255, 255, 1), rgb(207, 159, 178, 0.4));
   width: 100%;
   height: 150vh;
   text-align: center;
@@ -276,11 +278,13 @@ input:nth-of-type(5):checked ~ .carousel-items {
   color: black;
   margin-top: 3rem;
   font-weight: 300;
+  text-transform: uppercase;
 }
 
 .services-info p {
   font-size: 25px;
   justify-content: stretch;
+  font-weight: 200;
 }
 
 .services-images-1 {
@@ -372,7 +376,7 @@ input:nth-of-type(5):checked ~ .carousel-items {
 .service-images-container {
   display: flex;
   flex-direction: row;
-  gap: 3rem;
+  gap: 2.5rem;
   margin: 2rem 1rem;
 }
 
@@ -437,7 +441,7 @@ input:nth-of-type(5):checked ~ .carousel-items {
 }
 
 .vertical {
-  border-left: 3px solid rgb(133, 79, 79);
+  border-left: 3px solid rgb(207, 159, 178);
   height: 100px;
 }
 
@@ -454,6 +458,7 @@ input:nth-of-type(5):checked ~ .carousel-items {
   max-width: 35%;
   color: black;
   font-size: 20px;
+  font-weight: 200;
 }
 
 .review-container {
@@ -540,9 +545,9 @@ input:nth-of-type(5):checked ~ .carousel-items {
 }
 
 #contact-title {
-  font-size: 3rem;
-  margin-top: 2rem;
+  font-size: 3.5rem;
   display: block;
+  font-weight: 300;
 }
 .contact-info {
   display: flex;
@@ -553,8 +558,9 @@ input:nth-of-type(5):checked ~ .carousel-items {
 
 .contact-info p {
   max-width: 650px;
-  margin-top: 5rem;
+  margin-top: 3rem;
   font-size: 1.25rem;
+  font-weight: 200;
 }
 
 .contact-form {
@@ -586,6 +592,7 @@ input:nth-of-type(5):checked ~ .carousel-items {
   width: 100%;
   max-width: 500px;
   border: 1px solid black;
+  resize: none;
 }
 
 .contact-form input:valid {
@@ -599,7 +606,7 @@ input:nth-of-type(5):checked ~ .carousel-items {
 #submit-btn {
   border-radius: 10px;
   border: 1px solid black;
-  background-color: rgba(231, 166, 255, 0.62);
+  background-color: rgb(228, 175, 196);
   width: 100%;
   max-width: 500px;
 }
@@ -610,7 +617,7 @@ input:nth-of-type(5):checked ~ .carousel-items {
   align-items: stretch;
   padding: 0 0 2rem 0;
   color: white;
-  background-color: rgb(150, 130, 130);
+  background-color: #545863;
 }
 
 .footer-container h4 {
