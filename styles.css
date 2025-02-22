@@ -369,10 +369,6 @@ input:nth-of-type(5):checked ~ .carousel-items {
   padding: 0rem 0.5rem;
 }
 
-#services-2-h3 {
-  margin-top: 1.25rem;
-}
-
 .service-images-container {
   display: flex;
   flex-direction: row;
@@ -398,7 +394,7 @@ input:nth-of-type(5):checked ~ .carousel-items {
 }
 .service-images-container h3 {
   font-size: 2rem;
-  margin-bottom: 1rem;
+  margin: 2rem 0 1rem 0;
 }
 
 .service-images-container h3 {
@@ -407,8 +403,7 @@ input:nth-of-type(5):checked ~ .carousel-items {
 
 .service-images-container p {
   font-size: 1.25rem;
-  max-width: 300px;
-  margin-bottom: 1rem;
+  flex-grow: 1;
 }
 .service-images-container a {
   display: block;
@@ -952,7 +947,8 @@ input:nth-of-type(5):checked ~ .carousel-items {
   .services-images-2 p,
   .services-images-3 p,
   .services-images-4 p {
-    font-size: 20px;
+    font-size: 22px;
+    margin-top: 1rem;
   }
 
   .carousel {
@@ -1152,7 +1148,8 @@ input:nth-of-type(5):checked ~ .carousel-items {
   .services-images-2 p,
   .services-images-3 p,
   .services-images-4 p {
-    font-size: 20px;
+    font-size: 22px;
+    margin-top: 1rem;
   }
 
   .carousel {
