@@ -25,9 +25,10 @@
   margin: auto;
   top: 50%;
   width: 60%;
-  background-color: white;
+  background-color: rgba(255, 255, 255, 0.851);
   padding: 20px;
   border-radius: 10px;
+  border: 1px solid rgb(0, 0, 0);
 }
 
 .carousel-services {
