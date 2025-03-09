@@ -19,7 +19,7 @@ function sendMail() {
 // Store image paths for each service
 const serviceImages = {
   "services-images-1": ["Images/item-4.jpg", "Images/item-3.jpg", "Images/item-5.jpg"],
-  "services-images-2": ["Images/herinneringskoffer.jpg", "Images/koffer.jpg", "Images/koffer-2.jpg", "Images/koffer-3.jpg"],
+  "services-images-2": ["Images/Herinneringskoffer.jpg", "Images/koffer.jpg", "Images/koffer-2.jpg", "Images/koffer-3.jpg"],
   "services-images-3": ["Images/product-3.jpg", "Images/product-3-1.jpg", "Images/bloempot.jpg"],
   "services-images-4": ["Images/line-art-1.jpg", "Images/line-art-2.jpg", "Images/line-art-3.jpg"],
   "services-images-5": ["Images/cadeaubox-1.jpg", "Images/cadeaubox-2.jpg", "Images/cadeaubox-3.jpg"],
