@@ -8,6 +8,114 @@
   scroll-behavior: smooth;
 }
 
+/* Modal styles */
+.modal-services {
+  display: none; /* Hidden by default */
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+  position: relative;
+  margin: auto;
+  top: 50%;
+  width: 60%;
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.carousel-services {
+  display: flex;
+  gap: 10px;
+  overflow-x: auto;
+  padding: 10px 0;
+}
+
+.carousel-services img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+  transition: transform 0.3s ease;
+}
+
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 30px;
+  cursor: pointer;
+  color: red;
+}
+
+/* Styling for carousel controls */
+.carousel-control {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  font-size: 18px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.3s;
+}
+
+.carousel-control:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.prev {
+  left: 10px;
+}
+
+.next {
+  right: 10px;
+}
+
+/* Additional modal styling improvements */
+.modal-content {
+  transform: translateY(-50%);
+  max-width: 800px;
+  max-height: 80vh;
+  overflow: hidden;
+  width: 90%;
+}
+
+.carousel-services {
+  -webkit-overflow-scrolling: touch;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  padding: 10px 0;
+  display: flex;
+  align-items: center;
+}
+
+.carousel-services img {
+  scroll-snap-align: center;
+  flex: 0 0 auto;
+  width: 100%;
+  max-height: 60vh;
+  object-fit: contain;
+  margin: 0 5px;
+}
+
+/* Enhance visibility of current image */
+.carousel-services img:hover {
+  transform: scale(1.02);
+}
+
 .navigation-container {
   display: flex;
   justify-content: center;
