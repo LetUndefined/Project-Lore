@@ -511,6 +511,7 @@ input:nth-of-type(5):checked ~ .carousel-items {
 .services-images-5,
 .services-images-6 {
   padding: 0rem 0.5rem;
+  cursor: pointer;
 }
 
 .service-images-container {
