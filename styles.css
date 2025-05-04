@@ -477,7 +477,7 @@ input:nth-of-type(5):checked ~ .carousel-items {
   width: 100%;
   max-width: 400px;
   aspect-ratio: 4 / 3;
-  background-image: url(Images/cadeaubox.jpeg);
+  background-image: url(Images/cadeaubox-2.jpg);
   background-size: cover;
   text-align: center;
   position: relative;
