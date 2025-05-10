@@ -1,9 +1,13 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@300;400;500&family=Poppins:wght@200;300;400&display=swap");
+
 :root {
   --primary-color: rgb(207, 159, 178);
   --secondary-color: rgb(255, 255, 255);
   --text-color: rgb(51, 51, 51);
   --accent-color: rgb(180, 132, 151);
   --background-color: rgb(252, 252, 252);
+  --heading-font: "Playfair Display", serif;
+  --body-font: "Poppins", sans-serif;
 }
 
 * {
@@ -14,6 +18,16 @@
   font-weight: 100;
   transition: ease-in-out 0.2s;
   scroll-behavior: smooth;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--heading-font);
+  font-weight: 400;
 }
 
 /* Modal styles */
@@ -546,6 +560,42 @@ input:nth-of-type(5):checked ~ .carousel-items {
 .services-images-6 {
   padding: 0rem 0.5rem;
   cursor: pointer;
+  overflow: hidden;
+  position: relative;
+}
+
+.services-images-1::before,
+.services-images-2::before,
+.services-images-3::before,
+.services-images-4::before,
+.services-images-5::before,
+.services-images-6::before {
+  content: "";
+  width: 0;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.252);
+  transition: 0.2s ease;
+}
+
+.services-images-1:hover::before,
+.services-images-2:hover::before,
+.services-images-3:hover::before,
+.services-images-4:hover::before,
+.services-images-5:hover::before,
+.services-images-6:hover::before {
+  width: 100%;
+}
+
+.services-images-1:hover,
+.services-images-2:hover,
+.services-images-3:hover,
+.services-images-4:hover,
+.services-images-5:hover,
+.services-images-6:hover {
+  transform: translateY(-5px);
 }
 
 .service-images-container {
@@ -637,6 +687,8 @@ input:nth-of-type(5):checked ~ .carousel-items {
   margin-bottom: 1.5rem;
   position: relative;
   padding-bottom: 1rem;
+  font-family: var(--heading-font);
+  font-weight: 400;
 }
 
 #about-me-title::after {
@@ -660,9 +712,10 @@ input:nth-of-type(5):checked ~ .carousel-items {
   max-width: 600px;
   color: var(--text-color);
   font-size: 1.25rem;
-  font-weight: 200;
+  font-weight: 300;
   line-height: 1.8;
   text-align: left;
+  font-family: var(--body-font);
 }
 
 .review-container {
