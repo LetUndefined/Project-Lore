@@ -20,6 +20,20 @@
   scroll-behavior: smooth;
 }
 
+.hamburger {
+  flex-direction: column;
+  display: none;
+  padding: 10px;
+  gap: 5px;
+}
+
+.hamburger span {
+  background-color: #fff;
+  box-shadow: 0 5px 8px black;
+  width: 1.5rem;
+  height: 3px;
+}
+
 h1,
 h2,
 h3,
@@ -997,439 +1011,68 @@ input:nth-of-type(5):checked ~ .carousel-items {
 }
 
 @media screen and (max-width: 768px) {
-  .footer-container {
-    grid-template-columns: 1fr;
-    text-align: center;
-    padding: 2rem 1rem;
-    width: 100%;
-  }
-
-  .footer-container h4::after {
-    left: 50%;
-    transform: translateX(-50%);
-  }
-
-  .footer-social-media ul {
-    justify-content: center;
-  }
-
-  .footer-container a:hover {
-    transform: none;
-  }
-
-  .footer-social-media a:hover {
-    transform: translateY(-2px);
-  }
-}
-
-@media screen and (max-width: 375px) {
   .navigation-container {
     justify-content: center;
     border-radius: 0px 0 5px 5px;
   }
 
-  .header-container {
-    width: 100%;
-  }
-
-  .navigation-icons {
-    margin: 0;
-  }
-
   .navigation-info {
-    gap: 0;
-  }
-
-  .navigation-info a {
-    font-size: 18px;
-    font-weight: 200;
-  }
-
-  .navigation-icons li {
-    display: none;
-  }
-
-  .header-container h1 {
-    font-size: 60px;
-  }
-
-  .header-btn button {
-    border-radius: 30px;
-    margin: 2rem 1rem;
-    padding: 1rem 2rem;
-    font-size: 1rem;
-  }
-  .service-images-container {
     display: flex;
+    position: fixed;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
-    gap: 0;
-    margin: 0;
+    top: 0;
+    left: 0;
+    width: 70%;
+    height: 100vh;
+    transform: translateX(-100%);
+    background-color: var(--primary-color);
   }
 
-  .about-me {
-    height: 100%;
-    flex-direction: column;
-  }
-
-  .vertical {
-    display: none;
-  }
-
-  #about-me-title {
-    font-size: 40px;
-    text-align: center;
-    margin-bottom: 0.5rem;
-  }
-
-  #about-me-information {
-    font-size: 16px;
-    max-width: 80%;
-    text-align: center;
-  }
-
-  .services-container {
-    height: 100%;
-    padding-bottom: 0rem;
-  }
-
-  .services-info h2 {
-    font-size: 60px;
-    margin-bottom: 0;
-  }
-
-  .services-info p {
-    font-size: 16px;
-    padding: 0 1rem;
-    margin: 0;
-  }
-
-  .services-images-1,
-  .services-images-2,
-  .services-images-3,
-  .services-images-4,
-  .services-images-5,
-  .services-images-6 {
-    width: 100%;
-    max-width: 300px;
-    aspect-ratio: 4 / 3;
-  }
-
-  .services-images-1 p,
-  .services-images-2 p,
-  .services-images-3 p,
-  .services-images-4 p,
-  .services-images-5 p,
-  .services-images-6 p {
-    font-size: 18px;
-  }
-
-  .carousel {
-    height: 100%;
-    display: grid;
-    grid-template-rows: 350px 100px;
-  }
-
-  div.item {
-    height: 250px;
-    width: 250px;
-  }
-
-  .review-container {
-    height: 100%;
-  }
-
-  .review-1 p,
-  .review-3 p {
-    font-size: 18px;
-    height: 100%;
-    padding: 0;
+  .navigation-links {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 1rem;
-  }
-
-  .review-1 h5,
-  .review-3 h5 {
-    font-size: 8px;
-    display: flex;
-    align-items: center;
-  }
-
-  .reviews {
-    gap: 3rem;
     flex-direction: column;
-  }
-
-  #review-1 {
-    top: 40%;
-  }
-
-  #review-1-title {
-    top: -20%;
-    font-size: 12px;
-  }
-
-  #review-3 {
-    top: 92%;
-  }
-
-  #review-3-title {
-    top: 85%;
-    font-size: 12px;
-  }
-  .contact-container {
-    flex-direction: column;
-    height: 100%;
-    padding: 0.75rem;
-    gap: 1rem;
-  }
-  #contact-title {
-    font-size: 25px;
-  }
-
-  .contact-info p {
-    font-size: 16px;
-    margin-top: 1rem;
-  }
-
-  .contact-form {
-    margin: 0;
-    gap: 0.5rem;
-  }
-
-  .footer-container {
+    align-items: center;
     gap: 2rem;
   }
 
-  .footer-container h4 {
-    font-weight: 200;
-  }
-
-  .footer-container p,
-  .footer-container a {
-    font-size: 10px;
-  }
-
-  .footer-menu li {
-    margin-top: -8px;
-  }
-}
-
-@media screen and (max-width: 480px) and (min-width: 376px) {
-  .navigation-container {
+  .navigation-icons {
+    display: flex;
     justify-content: center;
-    border-radius: 0px 0 5px 5px;
+    margin-top: 2rem;
   }
 
-  .navigation-info ul {
-    gap: 1rem;
+  .navigation-icons ul {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+  }
+
+  .hamburger {
+    display: flex;
+    position: fixed;
+    right: 20px;
+    z-index: 1000;
+  }
+
+  .navigation-container::before {
+    content: "Atelier Lore";
+    position: absolute;
+    top: 10px;
+    left: 20px;
+    font-size: 30px;
+    color: #ffff;
+    text-shadow: 1px 1px 1px black;
+    font-weight: 900;
+  }
+
+  .active {
+    transform: translateX(0);
   }
 
   .header-container {
     width: 100%;
-  }
-
-  .navigation-icons {
-    margin: 0;
-  }
-
-  .navigation-info {
-    gap: 2rem;
-  }
-
-  .navigation-info a {
-    font-size: 16px;
-    font-weight: 200;
-  }
-
-  .header-container h1 {
-    font-size: 80px;
-  }
-
-  .header-btn button {
-    border-radius: 30px;
-    margin: 2rem 1rem;
-    padding: 1.5rem 2.5rem;
-    font-size: 1rem;
-  }
-  .service-images-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    gap: 0;
-    margin: 0;
-  }
-
-  .info-container {
-    padding: 1.5rem 1rem;
-  }
-
-  .about-me {
-    padding: 1.5rem;
-  }
-
-  #about-me-title {
-    font-size: 2rem;
-  }
-
-  #about-me-information {
-    font-size: 1rem;
-  }
-
-  .services-container {
-    height: 100%;
-    padding-bottom: 0rem;
-  }
-
-  .services-info h2 {
-    font-size: 50px;
-    margin-bottom: 0;
-  }
-
-  .services-info p {
-    font-size: 16px;
-    padding: 0 1rem;
-    margin: 0;
-  }
-
-  .services-images-1,
-  .services-images-2,
-  .services-images-3,
-  .services-images-4,
-  .services-images-5,
-  .services-images-6 {
-    width: 100%;
-    max-width: 300px;
-    aspect-ratio: 4 / 3;
-  }
-
-  .services-images-1 p,
-  .services-images-2 p,
-  .services-images-3 p,
-  .services-images-4 p,
-  .services-images-5 p,
-  .services-images-6 p {
-    font-size: 16px;
-    margin-top: 1rem;
-  }
-
-  .service-images-container h3 {
-    font-size: 1.5rem;
-  }
-
-  .carousel {
-    height: 100%;
-    display: grid;
-    grid-template-rows: 350px 100px;
-  }
-
-  div.item {
-    height: 250px;
-    width: 250px;
-  }
-
-  .review-container {
-    height: 100%;
-  }
-
-  .review-1 p,
-  .review-3 p {
-    font-size: 16px;
-    height: 100%;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 1rem;
-  }
-
-  .review-1 h5,
-  .review-3 h5 {
-    font-size: 8px;
-    display: flex;
-    align-items: center;
-  }
-
-  .reviews {
-    gap: 3rem;
-    flex-direction: column;
-  }
-
-  #review-1 {
-    top: 40%;
-  }
-
-  #review-1-title {
-    top: -20%;
-    font-size: 12px;
-  }
-
-  #review-3 {
-    top: 92%;
-  }
-
-  #review-3-title {
-    top: 85%;
-    font-size: 12px;
-  }
-
-  .contact-container {
-    flex-direction: column;
-    height: 100%;
-  }
-  #contact-title {
-    font-size: 25px;
-  }
-
-  .contact-info p {
-    font-size: 16px;
-    margin-top: 1rem;
-  }
-
-  .contact-form {
-    margin: 0;
-    gap: 0.5rem;
-  }
-
-  .footer-container {
-    gap: 2rem;
-  }
-
-  .footer-container h4 {
-    font-weight: 200;
-  }
-
-  .footer-container p,
-  .footer-container a {
-    font-size: 10px;
-  }
-
-  .footer-menu li {
-    margin-top: -8px;
-  }
-}
-
-@media screen and (max-width: 768px) and (min-width: 481px) {
-  .navigation-container {
-    justify-content: center;
-    border-radius: 0px 0 5px 5px;
-  }
-
-  .header-container {
-    width: 100%;
-  }
-
-  .navigation-icons {
-    margin: 0;
-  }
-
-  .navigation-info {
-    gap: 2rem;
-    margin: 1rem;
   }
 
   .navigation-info a {
@@ -1462,6 +1105,11 @@ input:nth-of-type(5):checked ~ .carousel-items {
 
   .about-me {
     padding: 1.5rem;
+    flex-direction: column;
+  }
+
+  .vertical {
+    display: none;
   }
 
   #about-me-title {
@@ -1470,6 +1118,7 @@ input:nth-of-type(5):checked ~ .carousel-items {
 
   #about-me-information {
     font-size: 1.1rem;
+    text-align: center;
   }
 
   .services-container {

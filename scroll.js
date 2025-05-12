@@ -16,6 +16,29 @@ function sendMail() {
   window.location.href = "mailto:atelierlore25@gmail.com?subject=" + subjectLine + "&body=" + "Naam: " + name + "%0D%0A" + "Telefoonnummer: " + phone + "%0D%0A" + body;
 }
 
+let hamburger = document.getElementById("hamburge");
+let navigation = document.getElementById("navigation-info");
+let navLinks = document.querySelectorAll(".navigation-links a");
+
+navLinks.forEach((e) => {
+  e.addEventListener("click", () => {
+    navigation.classList.remove("active");
+  });
+});
+
+hamburger.addEventListener("click", () => {
+  navigation.classList.toggle("active");
+});
+
+window.addEventListener("click", function (event) {
+  const clickInsideNav = navigation.contains(event.target);
+  const clickOnHamburger = hamburger.contains(event.target);
+
+  if (!clickInsideNav && !clickOnHamburger) {
+    navigation.classList.remove("active");
+  }
+});
+
 // Store image paths for each service
 const serviceImages = {
   "services-images-1": ["Images/item-4.jpg", "Images/item-3.jpg", "Images/item-5.jpg"],
