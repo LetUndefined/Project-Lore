@@ -1028,7 +1028,8 @@ input:nth-of-type(5):checked ~ .carousel-items {
     width: 70%;
     height: 100vh;
     transform: translateX(-100%);
-    background-color: var(--primary-color);
+    background-color: var(--accent-color);
+    gap: 0;
   }
 
   .navigation-links {
@@ -1036,6 +1037,18 @@ input:nth-of-type(5):checked ~ .carousel-items {
     flex-direction: column;
     align-items: center;
     gap: 2rem;
+  }
+
+  .navigation-links li {
+    background-color: var(--primary-color);
+    width: 150px;
+    height: 3rem;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    text-align: center;
+    border: 1px solid #ffff;
+    border-radius: 8px;
   }
 
   .navigation-icons {
