@@ -25,6 +25,7 @@
   display: none;
   padding: 10px;
   gap: 5px;
+  cursor: pointer;
 }
 
 .hamburger span {
