@@ -155,6 +155,7 @@ h6 {
 }
 
 .navigation-container {
+  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -166,10 +167,26 @@ h6 {
   backdrop-filter: blur(10px);
 }
 
+.navigation-container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  width: 0%;
+  height: 100%;
+  background: linear-gradient(to right, var(--primary-color), var(--primary-color), var(--secondary-color));
+  opacity: 0;
+  transition: 0.5s ease;
+  box-shadow: 0 5px 15px black;
+}
+
+.navigation-container.scrolled::before {
+  opacity: 1;
+  width: 100%;
+}
+
 .scrolled {
-  background: var(--primary-color);
-  transition: 0.2s;
-  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
 }
 
 .navigation-info {
@@ -242,7 +259,7 @@ h6 {
   font-family: "Sour Gummy";
   font-weight: 150;
   font-size: 120px;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  text-shadow: 2px 5px 10px rgba(0, 0, 0, 0.3);
 }
 
 .header-btn {
@@ -258,15 +275,17 @@ h6 {
   padding: 1.5rem 2.25rem;
   z-index: 3;
   cursor: pointer;
-  background-color: var(--primary-color);
+  background: linear-gradient(to right, var(--primary-color), var(--secondary-color));
   font-size: 18px;
   font-weight: 200;
   transition: all 0.3s ease;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.523);
 }
 
 .header-btn button:hover {
   transform: translateY(-5px);
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.523);
+  color: black;
 }
 
 @keyframes fadeIn {
@@ -1029,6 +1048,7 @@ input:nth-of-type(5):checked ~ .carousel-items {
     height: 100vh;
     transform: translateX(-100%);
     background-color: var(--accent-color);
+    z-index: 1;
     gap: 0;
   }
 
@@ -1051,6 +1071,10 @@ input:nth-of-type(5):checked ~ .carousel-items {
     border-radius: 8px;
   }
 
+  .navigation-links li:hover {
+    transform: translatey(-5px);
+  }
+
   .navigation-icons {
     display: flex;
     justify-content: center;
@@ -1070,15 +1094,18 @@ input:nth-of-type(5):checked ~ .carousel-items {
     z-index: 1000;
   }
 
-  .navigation-container::before {
+  .navigation-container::after {
     content: "Atelier Lore";
     position: absolute;
-    top: 10px;
-    left: 20px;
+    justify-content: flex-start;
+    display: flex;
+    align-items: center;
+    width: 100%;
     font-size: 30px;
+    margin-left: 2rem;
     color: #ffff;
     text-shadow: 1px 1px 1px black;
-    font-weight: 900;
+    font-weight: 700;
   }
 
   .active {
